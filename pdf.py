@@ -19,7 +19,7 @@ titles = [
     "Results and Discussion\n",
     "Discussion of the result\n",
 ]
-pdf_path = "Det.pdf"  # Replace with the actual path to your PDF file
+pdf_path = "hassanpdf_reader/Ass.pdf"  # Replace with the actual path to your PDF file
 text = pdf_to_text(pdf_path)
 print(text)
 file_nam = "Det" + ".txt"
@@ -38,9 +38,15 @@ for match in matches:
     extracted_text.append((titles[-1], text[start:].strip()))
 
 print(len(extracted_text))
-for i in extracted_text:
-    print(i[0])
-print(extracted_text[1])
+lenght_of_the_extracted_text = 0
+with open(file_nam, "w", encoding="utf-8") as fil:
+    for i in extracted_text:
+        lenght_of_the_extracted_text += len(i[1])
+        fil.writelines(i)
+    print(lenght_of_the_extracted_text)
+# print(extracted_text[1])
+
+
 # Write the full text to the text file
 # with open(file_nam, "wb") as fil:
 # fil.write(text.encode('utf-8'))
