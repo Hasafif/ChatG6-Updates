@@ -1,0 +1,944 @@
+{
+    "apiMessage": "This JSON was provided by Springer Nature",
+    "query": "title: mathematical modeling for football",
+    "apiKey": "2498a3119bec21389fd480eb1610d3ae",
+    "result": [
+        {
+            "total": "15",
+            "start": "1",
+            "pageLength": "100",
+            "recordsDisplayed": "15"
+        }
+    ],
+    "records": [
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/s12893-023-02234-w",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/s12893-023-02234-w"
+                }
+            ],
+            "title": "Assessment of mathematical model for elliptical excision: solving the doubt about vertex angle and predicting postoperative wound length",
+            "creators": [
+                { "creator": "Zou, Rifeng" },
+                { "creator": "Lin, Feng" },
+                { "creator": "Hao, Chunyu" },
+                { "creator": "Zhou, Dapeng" },
+                { "creator": "Liang, Jiulong" },
+                { "creator": "Wang, Hongyi" }
+            ],
+            "publicationName": "BMC Surgery",
+            "doi": "10.1186/s12893-023-02234-w",
+            "publisher": "BioMed Central",
+            "publisherName": "BioMed Central",
+            "publicationDate": "2023-10-27",
+            "publicationType": "Journal",
+            "issn": "",
+            "eIssn": "1471-2482",
+            "volume": "23",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Research"],
+            "startingPage": "1",
+            "endingPage": "7",
+            "journalId": "12893",
+            "openAccess": "true",
+            "onlineDate": "2023-10-27",
+            "coverDate": "2023-12",
+            "copyright": "\u00a92023 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": [
+                    "Background",
+                    "Elliptical excision is the most commonly used method for small benign tumour excision and primary closure. However, elliptical excision remains the topic of debate. The aim of this study was to explore the relationship among postoperative incision, vertex angle, and the length and width of fusiform excision through a mathematical model.",
+                    "Methods",
+                    "We collected data from fusiform circle excisions performed at the author\u2019s hospital (101 cases). The measured values were applied to the mathematical model formula for statistical analysis.",
+                    "Results",
+                    "The functional relationships among the length, width, arc, and angle of the fusiform circle were obtained. The mean apical tangent angle was 100.731\u00b0\u00b115.782\u00b0, and the mean apical inner angle was 50.366\u00b0\u00b17.891\u00b0. There was no significant difference between the preoperatively designed arc length preoperative and the postoperative incision length (P\u2009<\u20090.001). The apical vertex push-out distance equals half of the value of the fusiform length subtracted from arc.",
+                    "Conclusions",
+                    "The mathematical model can be used to design the incision for ellipse fusiform excision to predict the final wound length."
+                ]
+            },
+            "subjects": [
+                "Medicine & Public Health",
+                "Surgery",
+                "Internal Medicine"
+            ],
+            "disciplines": [
+                { "id": "3070", "term": "Surgery" },
+                { "id": "2992", "term": "Internal Medicine" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/s40561-023-00271-9",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/s40561-023-00271-9"
+                }
+            ],
+            "title": "Automated labeling of PDF mathematical exercises with word N-grams VSM classification",
+            "creators": [
+                { "creator": "Yamauchi, Taisei" },
+                {
+                    "ORCID": "0000-0001-7644-997X",
+                    "creator": "Flanagan, Brendan"
+                },
+                { "creator": "Nakamoto, Ryosuke" },
+                { "creator": "Dai, Yiling" },
+                { "creator": "Takami, Kyosuke" },
+                { "creator": "Ogata, Hiroaki" }
+            ],
+            "publicationName": "Smart Learning Environments",
+            "doi": "10.1186/s40561-023-00271-9",
+            "publisher": "Springer",
+            "publisherName": "Springer Nature Singapore",
+            "publicationDate": "2023-10-18",
+            "publicationType": "Journal",
+            "issn": "",
+            "eIssn": "2196-7091",
+            "volume": "10",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "AI in smart learning for sustainable education",
+            "genre": ["OriginalPaper", "Research"],
+            "startingPage": "1",
+            "endingPage": "30",
+            "journalId": "40561",
+            "openAccess": "true",
+            "onlineDate": "2023-10-18",
+            "coverDate": "2023-12",
+            "copyright": "\u00a92023 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "In recent years, smart learning environments have become central to modern education and support students and instructors through tools based on prediction and recommendation models. These methods often use learning material metadata, such as the knowledge contained in an exercise which is usually labeled by domain experts and is costly and difficult to scale. It recognizes that automated labeling eases the workload on experts, as seen in previous studies using automatic classification algorithms for research papers and Japanese mathematical exercises. However, these studies didn\u2019t delve into fine-grained labeling. In addition to that, as the use of materials in the system becomes more widespread, paper materials are transformed into PDF formats, which can lead to incomplete extraction. However, there is less emphasis on labeling incomplete mathematical sentences to tackle this problem in the previous research. This study aims to achieve precise automated classification even from incomplete text inputs. To tackle these challenges, we propose a mathematical exercise labeling algorithm that can handle detailed labels, even for incomplete sentences, using word n-grams, compared to the state-of-the-art word embedding method. The results of the experiment show that mono-gram features with Random Forest models achieved the best performance with a macro F-measure of 92.50%, 61.28% for 24-class labeling and 297-class labeling tasks, respectively. The contribution of this research is showing that the proposed method based on traditional simple n-grams has the ability to find context-independent similarities in incomplete sentences and outperforms state-of-the-art word embedding methods in specific tasks like classifying short and incomplete texts."
+            },
+            "subjects": [
+                "Education",
+                "Education, general",
+                "Computers and Education"
+            ],
+            "disciplines": [
+                { "id": "3353", "term": "Education" },
+                { "id": "6060", "term": "Computers and Education" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/s13018-023-03794-6",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/s13018-023-03794-6"
+                }
+            ],
+            "title": "Elastin is responsible for the rigidity of the ligament under shear and rotational stress: a mathematical simulation study",
+            "creators": [
+                { "creator": "Naya, Yuki" },
+                { "creator": "Takanari, Hiroki" }
+            ],
+            "publicationName": "Journal of Orthopaedic Surgery and Research",
+            "doi": "10.1186/s13018-023-03794-6",
+            "publisher": "BioMed Central",
+            "publisherName": "BioMed Central",
+            "publicationDate": "2023-04-19",
+            "publicationType": "Journal",
+            "issn": "",
+            "eIssn": "1749-799X",
+            "volume": "18",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Research article"],
+            "startingPage": "1",
+            "endingPage": "12",
+            "journalId": "13018",
+            "openAccess": "true",
+            "onlineDate": "2023-04-19",
+            "coverDate": "2023-12",
+            "copyright": "\u00a92023 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": [
+                    "Background",
+                    "An accurate understanding of the mechanical response of ligaments is important for preventing their damage and rupture. To date, ligament mechanical responses are being primarily evaluated using simulations. However, many mathematical simulations construct models of uniform fibre bundles or sheets using merely collagen fibres and ignore the mechanical properties of other components such as elastin and crosslinkers. Here, we evaluated the effect of elastin-specific mechanical properties and content on the mechanical response of ligaments to stress using a simple mathematical model.",
+                    "Methods",
+                    "Based on multiphoton microscopic images of porcine knee collateral ligaments, we constructed a simple mathematical simulation model that individually includes the mechanical properties of collagen fibres and elastin (fibre model) and compared with another model that considers the ligament as a single sheet (sheet model). We also evaluated the mechanical response of the fibre model as a function of the elastin content, from 0 to 33.5%. Both ends of the ligament were fixed to a bone, and tensile, shear, and rotational stresses were applied to one of the bones to evaluate the magnitude and distribution of the stress applied to the collagen and elastin at each load.",
+                    "Results",
+                    "Uniform stress was applied to the entire ligament in the sheet model, whereas in the fibre model, strong stress was applied at the junction between collagen fibres and elastin. Even in the same fibre model, as the elastin content increased from 0 to 14.4%, the maximum stress and displacement applied to the collagen fibres during shear stress decreased by 65% and 89%, respectively. The slope of the stress\u2013strain relationship at 14.4% elastin was 6.5 times greater under shear stress than that of the model with 0% elastin. A positive correlation was found between the stress required to rotate the bones at both ends of the ligament at the same angle and elastin content.",
+                    "Conclusions",
+                    "The fibre model, which includes the mechanical properties of elastin, can provide a more precise evaluation of the stress distribution and mechanical response. Elastin is responsible for ligament rigidity during shear and rotational stress."
+                ]
+            },
+            "subjects": [
+                "Medicine & Public Health",
+                "Orthopedics",
+                "Surgical Orthopedics"
+            ],
+            "disciplines": [
+                { "id": "3927", "term": "Orthopaedics" },
+                { "id": "3926", "term": "Surgical Orthopedics" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1007/s10864-021-09432-7",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/s10864-021-09432-7"
+                }
+            ],
+            "title": "Comparing the Minimum Celeration Line and the Beat Your Personal Best Goal-Setting Approaches During the Mathematical Practice of Students Diagnosed with Autism",
+            "creators": [
+                {
+                    "ORCID": "0000-0002-3065-4545",
+                    "creator": "Vostanis, Athanasios"
+                },
+                { "ORCID": "0000-0001-9789-1812", "creator": "Padden, Ciara" },
+                { "creator": "McTiernan, Aoife" },
+                {
+                    "ORCID": "0000-0002-7745-1825",
+                    "creator": "Langdon, Peter E."
+                }
+            ],
+            "publicationName": "Journal of Behavioral Education",
+            "doi": "10.1007/s10864-021-09432-7",
+            "publisher": "Springer",
+            "publisherName": "Springer US",
+            "publicationDate": "2023-03-01",
+            "publicationType": "Journal",
+            "issn": "1053-0819",
+            "eIssn": "1573-3513",
+            "volume": "32",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Original Paper"],
+            "startingPage": "21",
+            "endingPage": "50",
+            "journalId": "10864",
+            "openAccess": "true",
+            "printDate": "2023-03-13",
+            "onlineDate": "2021-02-27",
+            "coverDate": "2023-03",
+            "copyright": "\u00a92021 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "This study compared two goal-setting approaches found in the Precision Teaching literature, namely the minimum celeration line and the beat your personal best during the mathematical practice of three male students diagnosed with autism, aged 8\u20139. An adapted alternating treatments design with a control condition was embedded in a concurrent multiple baseline across participants design. Each approach was randomly allocated to either the multiplication/division (\u00d7\u00f7) table of 18 or 19, while no approach was allocated to the \u00d7\u00f714 table that acted as a control. Instruction utilized number families and consisted of (a) untimed practice, (b) frequency-building, (c) performance criteria, (d) graphing, and (e) a token economy. Upon practice completion, an assessment of maintenance, endurance, stability, and application (MESA) was conducted. Participants improved with both conditions and maintained their performance well, while improvements with the control condition were weak. The beat your personal best approach was highlighted as slightly more effective in terms of average performance and more efficient in terms of timings needed to achieve criterion. No differences were identified in terms of learning rate (i.e., celeration) or performance on the MESA. More research is warranted to identify which goal-setting procedure is more appropriate for students in special education."
+            },
+            "subjects": [
+                "Psychology",
+                "Child and School Psychology",
+                "Learning and Instruction"
+            ],
+            "disciplines": [
+                { "id": "7646", "term": "School Psychology" },
+                { "id": "7817", "term": "Instructional Psychology" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1007/s13394-022-00435-9",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/s13394-022-00435-9"
+                }
+            ],
+            "title": "Exploring the negotiation processes when developing a mathematical model to solve a Fermi problem in groups",
+            "creators": [
+                { "creator": "Brunet-Biarnes, Mireia" },
+                {
+                    "ORCID": "0000-0002-1387-5573",
+                    "creator": "Albarrac\u00edn, Llu\u00eds"
+                }
+            ],
+            "publicationName": "Mathematics Education Research Journal",
+            "doi": "10.1007/s13394-022-00435-9",
+            "publisher": "Springer",
+            "publisherName": "Springer Netherlands",
+            "publicationDate": "2022-11-11",
+            "publicationType": "Journal",
+            "issn": "1033-2170",
+            "eIssn": "2211-050X",
+            "volume": "",
+            "number": "",
+            "issueType": "",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Original Article"],
+            "startingPage": "1",
+            "endingPage": "22",
+            "journalId": "13394",
+            "openAccess": "true",
+            "onlineDate": "2022-11-11",
+            "copyright": "\u00a92022 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "Previous research has highlighted the importance of social relationships in mathematical group work while working on modelling activities. This study analyses the interaction of sixth-grade students in Primary Education (11 to 12\u00a0years old) carrying out a modelling task in groups with a Fermi problem used as the modelling activity. The focus of the study was to explore how students develop a mathematical model to solve a Fermi problem in groups. The data collected mainly came from the group discussions, although the students\u2019 productions were also considered. The results show that a variety of factors can influence group work and that model development is based on one student introducing an initial model and then, through social interaction with the other group members, the model is improved to develop a solid strategy that may be useful for solving the problem at hand."
+            },
+            "subjects": ["Education", "Mathematics Education"],
+            "disciplines": [{ "id": "8219", "term": "Mathematics Education" }]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1007/s13394-022-00433-x",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/s13394-022-00433-x"
+                }
+            ],
+            "title": "Using decision theory to understand preservice teachers\u2019 implementations of mathematical modelling",
+            "creators": [
+                {
+                    "ORCID": "0000-0001-8747-4636",
+                    "creator": "Hansen, Ragnhild"
+                }
+            ],
+            "publicationName": "Mathematics Education Research Journal",
+            "doi": "10.1007/s13394-022-00433-x",
+            "publisher": "Springer",
+            "publisherName": "Springer Netherlands",
+            "publicationDate": "2022-09-01",
+            "publicationType": "Journal",
+            "issn": "1033-2170",
+            "eIssn": "2211-050X",
+            "volume": "34",
+            "number": "3",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Original Article"],
+            "startingPage": "551",
+            "endingPage": "573",
+            "journalId": "13394",
+            "openAccess": "true",
+            "printDate": "2022-11-26",
+            "onlineDate": "2022-10-25",
+            "coverDate": "2022-09",
+            "copyright": "\u00a92022 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "In this study, we aim to explain choices that groups of preservice teachers made to implement modelling tasks in primary school. We found that the preservice teachers decided to facilitate everyday-inspired contexts for the tasks and that this could be explained by their reasoning that modelling is supposed to be an activity close to reality. Essentially, the groups preferred two different approaches to introducing students to the tasks: (1) by inviting students to physically participate in situations related to their local communities that were familiar to them (e.g. trash picking), and (2) through pre-structured problems that were recognisable to students (e.g. estimation of the number of beads in an irregular box). We found evidence that the preservice teachers tended towards avoiding focusing on possible mathematical answers to the tasks. This could be explained by lacking experience with how to find approximate solutions, or that the preservice teachers were engaged in observing students\u2019 solution strategies and mathematical behaviour."
+            },
+            "subjects": ["Education", "Mathematics Education"],
+            "disciplines": [{ "id": "8219", "term": "Mathematics Education" }]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1007/s11858-021-01316-4",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/s11858-021-01316-4"
+                }
+            ],
+            "title": "Can mathematical modelling work as a creativity-demanding activity? An empirical study in China",
+            "creators": [
+                { "creator": "Lu, Xiaoli" },
+                { "creator": "Kaiser, Gabriele" }
+            ],
+            "publicationName": "ZDM \u2013 Mathematics Education",
+            "doi": "10.1007/s11858-021-01316-4",
+            "publisher": "Springer",
+            "publisherName": "Springer Berlin Heidelberg",
+            "publicationDate": "2022-04-01",
+            "publicationType": "Journal",
+            "issn": "1863-9690",
+            "eIssn": "1863-9704",
+            "volume": "54",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Original Paper"],
+            "startingPage": "67",
+            "endingPage": "81",
+            "journalId": "11858",
+            "openAccess": "true",
+            "printDate": "2022-04-01",
+            "onlineDate": "2021-10-18",
+            "coverDate": "2022-04",
+            "copyright": "\u00a92021 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "Creativity has been identified as a key characteristic that allows students to adapt smoothly to rapid societal and economic changes in the real world. However, Chinese students appear to perform less well in mathematical problem-solving and problem-posing abilities, which are strongly connected to mathematical creativity. Mathematical modelling has recently been introduced as one of the six core competencies in the Chinese mathematical curriculum and is built on students\u2019 ability to solve real-world problems using mathematical means. As mathematical modelling is characterised by openness regarding the understanding of complex real-world problems and the complex relationship between the real world and mathematics, for the strengthening of creativity, mathematical modelling activities seem to be adequate to accomplish this purpose. In this paper, we describe a study with 71 upper secondary school students, 50 pre-service mathematics teachers, and 66 in-service mathematics teachers, based on an extended didactical framework regarding mathematical modelling as a creativity-demanding activity. The results of the study indicate a significant correlation between modelling competencies and creativity aspects. Especially significant correlations between the adequacy of the modelling approaches and the two creativity aspects of usefulness and fluency could be identified, as well as a significant negative correlation between usefulness and originality. The results of the correlational analysis of relationships among the four criteria were not always consistent in the three participant groups. Overall, the results have implications for the promotion of creativity for various expertise groups and demonstrate the dependency of the modelling activities on the mathematical knowledge of the participants and the mathematical topic with which they are dealing."
+            },
+            "subjects": [
+                "Education",
+                "Mathematics Education",
+                "Mathematics, general"
+            ],
+            "disciplines": [
+                { "id": "8219", "term": "Mathematics Education" },
+                { "id": "2924", "term": "Mathematics" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/s40798-019-0230-z",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/s40798-019-0230-z"
+                }
+            ],
+            "title": "A survey of mathematical models of human performance using power and energy",
+            "creators": [
+                {
+                    "ORCID": "0000-0002-8443-0854",
+                    "creator": "Sreedhara, Vijay Sarthy M."
+                },
+                {
+                    "ORCID": "0000-0001-8845-4581",
+                    "creator": "Mocko, Gregory M."
+                },
+                {
+                    "ORCID": "0000-0002-2700-9254",
+                    "creator": "Hutchison, Randolph E."
+                }
+            ],
+            "publicationName": "Sports Medicine - Open",
+            "doi": "10.1186/s40798-019-0230-z",
+            "publisher": "Springer",
+            "publisherName": "Springer International Publishing",
+            "publicationDate": "2019-12-27",
+            "publicationType": "Journal",
+            "issn": "2199-1170",
+            "eIssn": "2198-9761",
+            "volume": "5",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["ReviewPaper", "Review Article"],
+            "startingPage": "1",
+            "endingPage": "13",
+            "journalId": "40798",
+            "openAccess": "true",
+            "onlineDate": "2019-12-27",
+            "coverDate": "2019-12",
+            "copyright": "\u00a92019 The Author(s).",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "The ability to predict the systematic decrease of power during physical exertion gives valuable insights into health, performance, and injury. This review surveys the research of power-based models of fatigue and recovery within the area of human performance. Upon a thorough review of available literature, it is observed that the two-parameter critical power model is most popular due to its simplicity. This two-parameter model is a hyperbolic relationship between power and time with critical power as the power-asymptote and the curvature constant denoted by W \u2032. Critical power (CP) is a theoretical power output that can be sustained indefinitely by an individual, and the curvature constant ( W \u2032) represents the amount of work that can be done above CP. Different methods and models have been validated to determine CP and W \u2032, most of which are algebraic manipulations of the two-parameter model. The models yield different CP and W \u2032 estimates for the same data depending on the regression fit and rounding off approximations. These estimates, at the subject level, have an inherent day-to-day variability called intra-individual variability (IIV) associated with them, which is not captured by any of the existing methods. This calls for a need for new methods to arrive at the IIV associated with CP and W \u2032. Furthermore, existing models focus on the expenditure of W \u2032 for efforts above CP and do not model its recovery in the sub-CP domain. Thus, there is a need for methods and models that account for (i) the IIV to measure the effectiveness of individual training prescriptions and (ii) the recovery of W \u2032 to aid human performance optimization."
+            },
+            "subjects": ["Medicine & Public Health", "Sports Medicine"],
+            "disciplines": [{ "id": "4272", "term": "Sports Medicine" }]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/s40929-016-0009-0",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/s40929-016-0009-0"
+                }
+            ],
+            "title": "NHL expansion and fan allegiance: a mathematical modelling study",
+            "creators": [
+                { "creator": "Light, Jennifer" },
+                { "creator": "Chernin, Alina" },
+                {
+                    "ORCID": "0000-0001-9502-1688",
+                    "creator": "Heffernan, Jane M."
+                }
+            ],
+            "publicationName": "Mathematics-in-Industry Case Studies",
+            "doi": "10.1186/s40929-016-0009-0",
+            "publisher": "Springer",
+            "publisherName": "Springer International Publishing",
+            "publicationDate": "2016-10-04",
+            "publicationType": "Journal",
+            "issn": "",
+            "eIssn": "1913-4967",
+            "volume": "7",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Research"],
+            "startingPage": "1",
+            "endingPage": "20",
+            "journalId": "40929",
+            "openAccess": "true",
+            "onlineDate": "2016-10-04",
+            "coverDate": "2017-01",
+            "copyright": "\u00a92016 The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "Expansion of the NHL hockey league is of current interest. Success of an expansion team will rely on approved geographic locations, and most importantly fan support. Fan allegiance can be likened to infectious disease transmission, whereby individuals are susceptible, infected and recovered from a current team\u2019s hockey season. We employ an infectious disease model to assess the viability of certain Canadian and American cities that have been discussed as potential locations for NHL expansion in the past decade. We find that Quebec City presents an ideal location for expansion, where as, Las Vegas is suboptimal."
+            },
+            "subjects": [
+                "Mathematics",
+                "Mathematical Modeling and Industrial Mathematics"
+            ],
+            "disciplines": [
+                {
+                    "id": "3420",
+                    "term": "Mathematical Modeling and Industrial Mathematics"
+                }
+            ]
+        },
+        {
+            "contentType": "Chapter",
+            "identifier": "doi:10.1007/978-3-319-45004-9_1",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/978-3-319-45004-9_1"
+                }
+            ],
+            "title": "Teaching and Learning Mathematical Modelling: Approaches and Developments from German Speaking Countries",
+            "creators": [
+                { "creator": "Greefrath, Gilbert" },
+                { "creator": "Vorh\u00f6lter, Katrin" }
+            ],
+            "publicationName": "Teaching and Learning Mathematical Modelling",
+            "doi": "10.1007/978-3-319-45004-9_1",
+            "publisher": "Springer",
+            "publisherName": "Springer International Publishing",
+            "publicationDate": "2016-01-01",
+            "publicationType": "Book",
+            "printIsbn": "978-3-319-45003-2",
+            "electronicIsbn": "978-3-319-45004-9",
+            "genre": "OriginalPaper",
+            "openAccess": "true",
+            "onlineDate": "2016-08-21",
+            "seriesId": "14352",
+            "copyright": "\u00a92016 The Editor(s) (if applicable) and The Author(s)",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "The German discussion about modelling and applications in school has a long tradition. In this topical survey, we consider the development from the beginning of the 20th century until today and discuss the term mathematical model as well as different representations of the modelling process. The various tendencies of the historical and current debate on applications and modelling can be differentiated as perspectives on modelling. Nowadays modelling is one of the six general mathematical competencies of the educational standards for mathematics that were introduced in Germany beginning in 2003, and there have been many initiatives to implement modelling into school and carry out a whole range of empirical research projects with the focus on teachers or students in modelling processes. As a special way of implementing modelling into schools, modelling days or weeks carried out by various German universities have been established."
+            },
+            "subjects": [
+                "Education",
+                "Mathematics Education",
+                "Learning & Instruction",
+                "Teaching and Teacher Education"
+            ],
+            "disciplines": [
+                { "id": "8219", "term": "Mathematics Education" },
+                { "id": "7817", "term": "Instructional Psychology" },
+                { "id": "7592", "term": "Teaching and Teacher Education" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1007/s40329-014-0062-0",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1007/s40329-014-0062-0"
+                }
+            ],
+            "title": "The mathematical art of concentrating information",
+            "creators": [{ "creator": "Leonesi, Stefano" }],
+            "publicationName": "Lettera Matematica",
+            "doi": "10.1007/s40329-014-0062-0",
+            "publisher": "Springer",
+            "publisherName": "Springer Milan",
+            "publicationDate": "2014-09-01",
+            "publicationType": "Journal",
+            "issn": "2281-6917",
+            "eIssn": "2281-5937",
+            "volume": "2",
+            "number": "3",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": "OriginalPaper",
+            "startingPage": "113",
+            "endingPage": "119",
+            "journalId": "40329",
+            "openAccess": "true",
+            "printDate": "2014-09-11",
+            "onlineDate": "2014-08-08",
+            "coverDate": "2014-09",
+            "copyright": "\u00a92014 Centro P.RI.ST.EM, Universit\u00e0 Commerciale Luigi Bocconi",
+            "abstract": {
+                "h1": "Abstract",
+                "p": "Every digital message sent runs the risk of being intercepted, so it is important that messages be encrypted to protect our privacy. The addition of a digital signature can help prove the authenticity of a message or document, but it could nevertheless be intercepted and altered. To prevent this, a message digest is created, forming a kind of fingerprint of the original message. Such fingerprints are mathematical functions that concentrate a message into a fixed-length representation. These are also useful in situations where information is to be kept secret until a later moment, but must be capable of being unmodified and authenticated when it is finally revealed. The aim of this paper is to show how cryptography, digital signatures and fingerprint functions may be linked with a famous curiosity of probability, the birthday paradox."
+            },
+            "subjects": [
+                "Mathematics",
+                "Mathematics, general",
+                "Theoretical, Mathematical and Computational Physics",
+                "Mathematical Methods in Physics",
+                "Applications of Mathematics",
+                "History of Mathematical Sciences",
+                "History of Science"
+            ],
+            "disciplines": [
+                { "id": "2924", "term": "Mathematics" },
+                {
+                    "id": "2998",
+                    "term": "Theoretical, Mathematical and Computational Physics"
+                },
+                { "id": "5270", "term": "Mathematical Methods in Physics" },
+                { "id": "3022", "term": "Applications of Mathematics" },
+                { "id": "5090", "term": "History of Mathematical Sciences" },
+                { "id": "4624", "term": "History of Science" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1186/1742-4682-2-13",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1186/1742-4682-2-13"
+                }
+            ],
+            "title": "Mathematical model of blunt injury to the vascular wall via formation of rouleaux and changes in local hemodynamic and rheological factors. Implications for the mechanism of traumatic myocardial infarction",
+            "creators": [{ "creator": "Ismailov, Rovshan M" }],
+            "publicationName": "Theoretical Biology and Medical Modelling",
+            "doi": "10.1186/1742-4682-2-13",
+            "publisher": "BioMed Central",
+            "publisherName": "BioMed Central",
+            "publicationDate": "2005-03-30",
+            "publicationType": "Journal",
+            "issn": "",
+            "eIssn": "1742-4682",
+            "volume": "2",
+            "number": "1",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["OriginalPaper", "Research"],
+            "startingPage": "1",
+            "endingPage": "10",
+            "journalId": "12976",
+            "openAccess": "true",
+            "onlineDate": "2005-03-30",
+            "coverDate": "2005-12",
+            "copyright": "\u00a92005 Ismailov; licensee BioMed Central Ltd.",
+            "abstract": {
+                "h1": "Abstract",
+                "p": [
+                    "Background",
+                    "Blood viscosity is fundamentally important in clinical practice yet the apparent viscosity at very low shear rates is not well understood. Various conditions such as blunt trauma may lead to the appearance of zones inside the vessel where shear stress equals zero. The aim of this research was to determine the blood viscosity and quantitative aspects of rouleau formation from erythrocytes at yield velocity (and therefore shear stress) equal to zero. Various fundamental differential equations and aspects of multiphase medium theory have been used. The equations were solved by a method of approximation. Experiments were conducted in an aerodynamic tube.",
+                    "Results",
+                    "The following were determined: (1) The dependence of the viscosity of a mixture on volume fraction during sedimentation of a group of particles (forming no aggregates), confirmed by published experimental data on the volume fractions of the second phase ( f _2) up to 0.6; (2) The dependence of the viscosity of the mixture on the volume fraction of erythrocytes during sedimentation of rouleaux when yield velocity is zero; (3) The increase in the viscosity of a mixture with an increasing erythrocyte concentration when yield velocity is zero; (4) The dependence of the quantity of rouleaux on shear stress (the higher the shear stress, the fewer the rouleaux) and on erythrocyte concentration (the more erythrocytes, the more rouleaux are formed).",
+                    "Conclusions",
+                    "This work represents one of few attempts to estimate extreme values of viscosity at low shear rate. It may further our understanding of the mechanism of blunt trauma to the vessel wall and therefore of conditions such as traumatic acute myocardial infarction. Such estimates are also clinically significant, since abnormal values of blood viscosity have been observed in many pathological conditions such as traumatic crush syndrome, cancer, acute myocardial infarction and peripheral vascular disease."
+                ]
+            },
+            "subjects": [
+                "Biomedicine",
+                "Biomedicine, general",
+                "Systems Biology",
+                "Physiological, Cellular and Medical Topics",
+                "Statistics for Life Sciences, Medicine, Health Sciences",
+                "Bioinformatics",
+                "Infectious Diseases"
+            ],
+            "disciplines": [
+                { "id": "3014", "term": "Biomedical Research" },
+                { "id": "2912", "term": "Computational and Systems Biology" },
+                {
+                    "id": "3021",
+                    "term": "Mathematical and Computational Biology"
+                },
+                { "id": "5065", "term": "Biostatistics" },
+                { "id": "7750", "term": "Bioinformatics" },
+                { "id": "2877", "term": "Diseases" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1057/palgrave.jors.2600926",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/palgrave.jors.2600926"
+                }
+            ],
+            "title": "Interior Point Methods of Mathematical Programming",
+            "creators": [{ "creator": "Talaky, T" }],
+            "publicationName": "Journal of the Operational Research Society",
+            "doi": "10.1057/palgrave.jors.2600926",
+            "publisher": "Springer",
+            "publisherName": "Palgrave Macmillan UK",
+            "publicationDate": "1997-09-01",
+            "publicationType": "Journal",
+            "issn": "0160-5682",
+            "eIssn": "1476-9360",
+            "volume": "48",
+            "number": "9",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["BriefCommunication", "Book Selection"],
+            "startingPage": "962",
+            "endingPage": "962",
+            "journalId": "41274",
+            "openAccess": "true",
+            "printDate": "1997-08-29",
+            "onlineDate": "1997-12-18",
+            "coverDate": "1997-09-01",
+            "copyright": "\u00a91997 Operational Research Society",
+            "abstract": "",
+            "subjects": [
+                "Business and Management",
+                "Operations Research/Decision Theory",
+                "Business and Management, general",
+                "Management"
+            ],
+            "disciplines": [
+                {
+                    "id": "3671",
+                    "term": "Operations Research and Decision Theory"
+                },
+                { "id": "3120", "term": "Business and Management" },
+                { "id": "3248", "term": "Management" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1057/palgrave.jors.2600432",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1057/palgrave.jors.2600432"
+                }
+            ],
+            "title": "A Mathematical Kaleidoscope: Applications in Industry, Business and Science",
+            "creators": [
+                { "creator": "Connolly, B" },
+                { "creator": "Vajda, S" }
+            ],
+            "publicationName": "Journal of the Operational Research Society",
+            "doi": "10.1057/palgrave.jors.2600432",
+            "publisher": "Springer",
+            "publisherName": "Palgrave Macmillan UK",
+            "publicationDate": "1997-09-01",
+            "publicationType": "Journal",
+            "issn": "0160-5682",
+            "eIssn": "1476-9360",
+            "volume": "48",
+            "number": "9",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": ["BriefCommunication", "Book Selection"],
+            "startingPage": "961",
+            "endingPage": "961",
+            "journalId": "41274",
+            "openAccess": "true",
+            "printDate": "1997-08-29",
+            "onlineDate": "1997-12-18",
+            "coverDate": "1997-09-01",
+            "copyright": "\u00a91997 Operational Research Society",
+            "abstract": "",
+            "subjects": [
+                "Business and Management",
+                "Operations Research/Decision Theory",
+                "Business and Management, general",
+                "Management"
+            ],
+            "disciplines": [
+                {
+                    "id": "3671",
+                    "term": "Operations Research and Decision Theory"
+                },
+                { "id": "3120", "term": "Business and Management" },
+                { "id": "3248", "term": "Management" }
+            ]
+        },
+        {
+            "contentType": "Article",
+            "identifier": "doi:10.1038/161758a0",
+            "language": "en",
+            "url": [
+                {
+                    "format": "",
+                    "platform": "",
+                    "value": "http://dx.doi.org/10.1038/161758a0"
+                }
+            ],
+            "title": "Mathematical Theory of Tetraploidy",
+            "publicationName": "Nature",
+            "doi": "10.1038/161758a0",
+            "publisher": "Nature",
+            "publisherName": "Nature Publishing Group UK",
+            "publicationDate": "1948-05-15",
+            "publicationType": "Journal",
+            "issn": "0028-0836",
+            "eIssn": "1476-4687",
+            "volume": "161",
+            "number": "4098",
+            "issueType": "Regular",
+            "topicalCollection": "",
+            "genre": "News",
+            "startingPage": "758",
+            "endingPage": "758",
+            "journalId": "41586",
+            "openAccess": "true",
+            "onlineDate": "1948-05-01",
+            "coverDate": "1948-05-15",
+            "copyright": "\u00a91948 Springer Nature Limited",
+            "abstract": "",
+            "subjects": [
+                "Science, Humanities and Social Sciences, multidisciplinary",
+                "Science, Humanities and Social Sciences, multidisciplinary",
+                "Science, multidisciplinary"
+            ],
+            "disciplines": [
+                { "id": "2883", "term": "Humanities and Social Sciences" }
+            ]
+        }
+    ],
+    "facets": [
+        {
+            "name": "subject",
+            "values": [
+                { "value": "Education", "count": "5" },
+                { "value": "Mathematics Education", "count": "4" },
+                { "value": "Medicine & Public Health", "count": "3" },
+                { "value": "Business and Management", "count": "2" },
+                { "value": "Business and Management, general", "count": "2" },
+                { "value": "Management", "count": "2" },
+                { "value": "Mathematics", "count": "2" },
+                { "value": "Mathematics, general", "count": "2" },
+                {
+                    "value": "Operations Research/Decision Theory",
+                    "count": "2"
+                },
+                { "value": "Applications of Mathematics", "count": "1" },
+                { "value": "Bioinformatics", "count": "1" },
+                { "value": "Biomedicine", "count": "1" },
+                { "value": "Biomedicine, general", "count": "1" },
+                { "value": "Child and School Psychology", "count": "1" },
+                { "value": "Computers and Education", "count": "1" },
+                { "value": "Education, general", "count": "1" },
+                { "value": "History of Mathematical Sciences", "count": "1" },
+                { "value": "History of Science", "count": "1" },
+                { "value": "Infectious Diseases", "count": "1" },
+                { "value": "Internal Medicine", "count": "1" }
+            ]
+        },
+        {
+            "name": "keyword",
+            "values": [
+                { "value": "Mathematical modelling", "count": "2" },
+                { "value": "Acute Myocardial Infarction", "count": "1" },
+                { "value": "Automatic labeling", "count": "1" },
+                { "value": "Beliefs", "count": "1" },
+                { "value": "Birthday attack", "count": "1" },
+                { "value": "Birthday paradox", "count": "1" },
+                { "value": "Bit-commitment", "count": "1" },
+                { "value": "Blood Viscosity", "count": "1" },
+                { "value": "Blunt Trauma", "count": "1" },
+                { "value": "Cohesive Force", "count": "1" },
+                { "value": "Collagen", "count": "1" },
+                { "value": "Critical power", "count": "1" },
+                { "value": "Decision theories", "count": "1" },
+                { "value": "Digital signatures", "count": "1" },
+                { "value": "Elastin", "count": "1" },
+                { "value": "Elliptical excision", "count": "1" },
+                { "value": "Energy expenditure", "count": "1" },
+                { "value": "Fatigue", "count": "1" },
+                { "value": "Fermi problems", "count": "1" },
+                { "value": "Final wound length", "count": "1" }
+            ]
+        },
+        {
+            "name": "pub",
+            "values": [
+                {
+                    "value": "Journal of the Operational Research Society",
+                    "count": "2"
+                },
+                {
+                    "value": "Mathematics Education Research Journal",
+                    "count": "2"
+                },
+                { "value": "BMC Surgery", "count": "1" },
+                { "value": "Journal of Behavioral Education", "count": "1" },
+                {
+                    "value": "Journal of Orthopaedic Surgery and Research",
+                    "count": "1"
+                },
+                { "value": "Lettera Matematica", "count": "1" },
+                {
+                    "value": "Mathematics-in-Industry Case Studies",
+                    "count": "1"
+                },
+                { "value": "Nature", "count": "1" },
+                { "value": "Smart Learning Environments", "count": "1" },
+                { "value": "Sports Medicine - Open", "count": "1" },
+                {
+                    "value": "Teaching and Learning Mathematical Modelling",
+                    "count": "1"
+                },
+                {
+                    "value": "Theoretical Biology and Medical Modelling",
+                    "count": "1"
+                },
+                { "value": "ZDM \u2013 Mathematics Education", "count": "1" }
+            ]
+        },
+        {
+            "name": "year",
+            "values": [
+                { "value": "2023", "count": "4" },
+                { "value": "2022", "count": "3" },
+                { "value": "2019", "count": "1" },
+                { "value": "2016", "count": "2" },
+                { "value": "2014", "count": "1" },
+                { "value": "2005", "count": "1" },
+                { "value": "1997", "count": "2" },
+                { "value": "1948", "count": "1" }
+            ]
+        },
+        {
+            "name": "country",
+            "values": [
+                { "value": "China", "count": "2" },
+                { "value": "Germany", "count": "2" },
+                { "value": "Japan", "count": "2" },
+                { "value": "United States", "count": "2" },
+                { "value": "Australia", "count": "1" },
+                { "value": "Canada", "count": "1" },
+                { "value": "Ireland", "count": "1" },
+                { "value": "Italy", "count": "1" },
+                { "value": "Norway", "count": "1" },
+                { "value": "Spain", "count": "1" },
+                { "value": "United Kingdom", "count": "1" }
+            ]
+        },
+        {
+            "name": "type",
+            "values": [
+                { "value": "Journal", "count": "14" },
+                { "value": "Book", "count": "1" }
+            ]
+        }
+    ]
+}

@@ -9,21 +9,66 @@ springer_api_key = "2498a3119bec21389fd480eb1610d3ae"
 
 
 class Springer_Article:
-    def __init__(self, records={}):
-        self.records = records
-        if "creators" in records:
-            self.creators = records["creators"]
-        else:
-            self.creators = "N/A"
-        self.title = records["title"]
+    def __init__(self, records: dict = {}):
+        self.records: dict = records
+        self.creators = records.get("creators")
+        self.title = records.get("title")
         self.journal = records["publicationName"]
         self.date = records["publicationDate"]
+        self.abstract = self.get_article_abstract()
+        self.pdf_page_url = self.get_pdf_page_url()
         self.citesnumber = "N/A"
-        if "p" in records["abstract"]:
-            self.abstract = records["abstract"]["p"]
-        else:
-            self.abstract = "N/A"
         self.full_text = None
+
+    def get_article_abstract(self) -> str | None:
+        data: dict = self.records.get("abstract", None)
+        if data:
+            return data.get("p")
+        return None
+
+    def get_pdf_page_url(self) -> str | None:
+        try:
+            data: dict = self.records.get("url", None)[0]
+            if data:
+                return data.get("value")
+            return None
+        except:
+            return None
+
+    def get_download_url(self) -> str | None:
+        page_url = self.get_pdf_page_url()
+
+        response = requests.get(page_url)
+
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, "html.parser")
+            try:
+                html_url = soup.find("meta", {"name": "citation_fulltext_html_url"})[
+                    "content"
+                ]
+                try:
+                    pdf_file_path = (
+                        soup.find("body")
+                        .find("div", class_="c-pdf-download u-clear-both u-mb-16")
+                        .find("a", href=True)["href"]
+                    )
+
+                except:
+                    pdf_file_path = (
+                        soup.find("body")
+                        .find("div", class_="c-pdf-download u-clear-both")
+                        .find("a", href=True)["href"]
+                    )
+
+                parsed_html_url: ParseResult = urlparse(html_url)
+
+                full_pdf_url = f"{parsed_html_url.scheme}://{parsed_html_url.netloc}{pdf_file_path}"
+                return full_pdf_url
+            except Exception as e:
+                print(e)
+                return None
+        else:
+            return None
 
     def author(self):
         name_lst = []
@@ -37,24 +82,32 @@ class Springer_Article:
 
     def significant(self):
         # sentences_lst = self.abstract.split('.')
-        for s in self.abstract:
-            if "significan" in s or "associat" in s:
-                return s
-        return "None"
+        try:
+            for s in self.abstract:
+                if "significan" in s or "associat" in s:
+                    return s
+        except:
+            return "None"
 
     def conclusion(self):
         # sentences_lst = self.abstract.split('.')
-        for s in self.abstract:
-            if "conclu" in s:
-                return s
-        return "None"
+        try:
+            for s in self.abstract:
+                if "conclu" in s:
+                    return s
+            return "None"
+        except:
+            return "None"
 
     def suggest(self):
         # sentences_lst = self.abstract.split('.')
-        for s in self.abstract:
-            if "suggest" in s:
-                return s
-        return "None"
+        try:
+            for s in self.abstract:
+                if "suggest" in s:
+                    return s
+            return "None"
+        except:
+            return "None"
 
     def get_doi(self):
         if "doi" in self.records:
@@ -62,7 +115,7 @@ class Springer_Article:
         else:
             return None
 
-    def get_full_text(self):
+    def get_pdf_page(self):
         conts = {}
         doi = self.get_doi()
         if doi:
@@ -80,27 +133,33 @@ class Springer_Article:
             return conts
 
 
+# https://dev.springernature.com/adding-constraints
 base_url_springer = "http://api.springernature.com/openaccess/json"
 url_params_springer = {}
 url_params_springer["api_key"] = springer_api_key
-url_params_springer["p"] = 200
-url_params_springer["q"] = "title: mathematical modeling for football"
-url_params_springer["date-facet-mode"] = "between"
-url_params_springer["date"] = "2017-01-01 TO 2019-12-31"
-url_params_springer["facet"] = "language"
-url_params_springer["facet-language"] = "nl"
+
+url_params_springer["start"] = 1  # start from
+url_params_springer["p"] = 2000  # num of articles
+url_params_springer["q"] = 'title:"black holes"'
+# url_params_springer["date-facet-mode"] = "between"
+# url_params_springer["date"] = "2017-01-01 TO 2019-12-31"
+# url_params_springer["facet"] = "language"
+# url_params_springer["facet-language"] = "en"
 
 d_springer = requests.get(base_url_springer, params=url_params_springer)
 json_content = d_springer.json()
 
-with open("springer_abstract.txt", "w") as fr_springer:
+with open("springer_abstract.json", "w") as fr_springer:
     json.dump(json_content, fr_springer)
 # try:
 article_insts2 = [Springer_Article(records) for records in json_content["records"]]
 # except:
 # for i in json_content['records']:
 # print(i)
-
+print(len(article_insts2))
+for article in article_insts2:
+    print(article.title)
+    print(article.get_pdf_page_url())
 
 titlelst2 = [i.title for i in article_insts2]
 authorlst2 = [i.author() for i in article_insts2]
@@ -114,76 +173,78 @@ suggestlst2 = [i.suggest() for i in article_insts2]
 # full_textlst2 = [i.full_text for i in article_insts2]
 
 
-for article in article_insts2:
-    s = article.get_full_text()
-    w = s["PDF URL"]
-    response = requests.get(w)
+# for article in article_insts2:
+#     s = article.get_pdf_page()
+#     w = s["PDF URL"]
+#     response = requests.get(w)
 
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
-        
-        #file_nam = article.title[:3] + ".txt"
+#     if response.status_code == 200:
+#         soup = BeautifulSoup(response.content, "html.parser")
 
-            # Write the full text to the text file
-        #with open(file_nam, "wb") as fil:
-                     #fil.write(response.content)
-        try:
-            html_url = soup.find("meta", {"name": "citation_fulltext_html_url"})[
-                "content"
-            ]
-            try:
-              pdf_file_path = (
-                 soup.find("body")
-                 .find("div", class_="c-pdf-download u-clear-both u-mb-16")
-                 .find("a", href=True)["href"]
-             )
-            
-            except:
-                pdf_file_path = (
-                soup.find("body")
-                .find("div", class_="c-pdf-download u-clear-both")
-                .find("a", href=True)["href"]
-             )
-            
-            parsed_html_url: ParseResult = urlparse(html_url)
-            # ParseResult(
-            #     scheme="https",
-            #     netloc="link.springer.com",
-            #     path="/article/10.1007/s40329-014-0062-0",
-            #     params="",
-            #     query="",
-            #     fragment="",
-            # )
+#         # file_nam = article.title[:3] + ".txt"
 
-            print(parsed_html_url.geturl())
-            print(pdf_file_path)
-            full_pdf_url = (
-                f"{parsed_html_url.scheme}://{parsed_html_url.netloc}{pdf_file_path}"
-            )
-            print(full_pdf_url)
-        except Exception as e:
-            print(e)
-            continue
+#         # Write the full text to the text file
+#         # with open(file_nam, "wb") as fil:
+#         # fil.write(response.content)
+#         try:
+#             html_url = soup.find("meta", {"name": "citation_fulltext_html_url"})[
+#                 "content"
+#             ]
+#             try:
+#                 pdf_file_path = (
+#                     soup.find("body")
+#                     .find("div", class_="c-pdf-download u-clear-both u-mb-16")
+#                     .find("a", href=True)["href"]
+#                 )
 
-        pdf_url_response = requests.get(full_pdf_url)
+#             except:
+#                 pdf_file_path = (
+#                     soup.find("body")
+#                     .find("div", class_="c-pdf-download u-clear-both")
+#                     .find("a", href=True)["href"]
+#                 )
 
-        if pdf_url_response.status_code == 200:
-            full_pdf = pdf_url_response.content
+#             parsed_html_url: ParseResult = urlparse(html_url)
+#             # ParseResult(
+#             #     scheme="https",
+#             #     netloc="link.springer.com",
+#             #     path="/article/10.1007/s40329-014-0062-0",
+#             #     params="",
+#             #     query="",
+#             #     fragment="",
+#             # )
 
-            # Extract the title from the PDF URL and use it as the file name
+#             print(parsed_html_url.geturl())
+#             print(pdf_file_path)
+#             full_pdf_url = (
+#                 f"{parsed_html_url.scheme}://{parsed_html_url.netloc}{pdf_file_path}"
+#             )
+#             print(full_pdf_url)
+#         except Exception as e:
+#             print(e)
+#             continue
 
-            file_name = article.title[:3] + ".pdf"
+#         pdf_url_response = requests.get(full_pdf_url)
 
-            # Write the full text to the text file
-            with open(file_name, "wb") as file:
-                file.write(full_pdf)
+#         if pdf_url_response.status_code == 200:
+#             full_pdf = pdf_url_response.content
 
-            print("Full Text for", w, "has been saved to", file_name)
-        else:
-            print("Failed to retrieve full text for", w)
-    else:
-        print("Failed to retrieve PDF URL for", w)
-        print("Failed to retrieve full text for", w)
+#             # Extract the title from the PDF URL and use it as the file name
+
+#             file_name = article.title[:3] + ".pdf"
+
+#             # Write the full text to the text file
+#             with open(file_name, "wb") as file:
+#                 file.write(full_pdf)
+
+#             print("Full Text for", w, "has been saved to", file_name)
+#         else:
+#             print("Failed to retrieve full text for", w)
+#     else:
+#         print("Failed to retrieve PDF URL for", w)
+#         print("Failed to retrieve full text for", w)
+
+
 with open("springer_abstract.csv", "w", newline="", encoding="utf-8") as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(
