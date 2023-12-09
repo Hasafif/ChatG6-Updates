@@ -137,14 +137,16 @@ class Springer_Article:
 base_url_springer = "http://api.springernature.com/openaccess/json"
 url_params_springer = {}
 url_params_springer["api_key"] = springer_api_key
-
-url_params_springer["start"] = 1  # start from
-url_params_springer["p"] = 2000  # num of articles
-url_params_springer["q"] = 'title:"black holes"'
-# url_params_springer["date-facet-mode"] = "between"
-# url_params_springer["date"] = "2017-01-01 TO 2019-12-31"
-# url_params_springer["facet"] = "language"
-# url_params_springer["facet-language"] = "en"
+url_params_springer["p"] = 200
+url_params_springer["q"] = "title: machine learning for cyber attacks"
+url_params_springer["date-facet-mode"] = "between"
+url_params_springer["date"] = "2017-01-01 TO 2019-12-31"
+url_params_springer["facet"] = "language"
+url_params_springer["facet-language"] = "nl"
+url_params_springer["facet"] = "content-type"
+url_params_springer[
+    "facet-content-type"
+] = "Article"  # Adjusted to only retrieve articles
 
 d_springer = requests.get(base_url_springer, params=url_params_springer)
 json_content = d_springer.json()

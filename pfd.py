@@ -8,8 +8,8 @@ def extract_text_from_pdf(pdf_path, output_path):
                 file.write(text)
 
 # Provide the paths to your PDF file and output text file
-pdf_path = "Com.pdf"
-output_path = "Com.txt"
+pdf_path = "On .pdf"
+output_path = "On.txt"
 
 # Call the function to extract and write the text
 extract_text_from_pdf(pdf_path, output_path)
