@@ -3,7 +3,8 @@ from urllib.parse import urlparse, ParseResult
 from bs4 import BeautifulSoup
 
 # for more info
-# https://dev.springernature.com/adding-constraints
+# https://dev.springernature.com
+
 query = "black holes"
 springer_api_key = "2498a3119bec21389fd480eb1610d3ae"
 base_url_springer = "http://api.springernature.com/openaccess/json"
@@ -30,25 +31,25 @@ mathjax_cdn_script_tag = """
 
 
 class SpringerArticle:
-    def __init__(self, records: dict = {}):
-        self.records: dict = records
-        self.creators = records.get("creators")
-        self.title = records.get("title")
-        self.journal = records["publicationName"]
-        self.date = records["publicationDate"]
+    def __init__(self, record: dict):
+        self.record: dict = record
+        self.creators = record.get("creators")
+        self.title = record.get("title")
+        self.journal = record["publicationName"]
+        self.date = record["publicationDate"]
         self.abstract = self.get_article_abstract()
         self.pdf_page_url = self.get_pdf_page_url()
         # self.download_url = self.get_download_url()
 
     def get_article_abstract(self) -> str | None:
-        data: dict = self.records.get("abstract", None)
+        data: dict = self.record.get("abstract", None)
         if data:
             return data.get("p")
         return None
 
     def get_pdf_page_url(self) -> str | None:
         try:
-            data: dict = self.records.get("url", None)[0]
+            data: dict = self.record.get("url", None)[0]
             if data:
                 return data.get("value")
 
@@ -82,7 +83,7 @@ class SpringerArticle:
             return None
 
     @property
-    def easy_download_url(self):
+    def download_url(self):
         """
         fetch the pdf download url
         by manipulating with the article url
@@ -93,10 +94,10 @@ class SpringerArticle:
             res.raise_for_status()
             return res.url.replace("article", "content/pdf") + ".pdf"
         except:
-            return None
+            return self.scrap_download_url
 
     @property
-    def download_url(self) -> str | None:
+    def scrap_download_url(self) -> str | None:
         """
         fetch the pdf download url by scrabing the article page
         """
@@ -135,7 +136,7 @@ class SpringerArticle:
             return None
 
 
-def springer_search(query: str = query) -> list[SpringerArticle]:
+def search_in_springer(query: str = query) -> list[SpringerArticle]:
     url_params_springer["q"] = f'title:"{query}"'
     records = requests.get(base_url_springer, params=url_params_springer).json()[
         "records"
@@ -146,13 +147,14 @@ def springer_search(query: str = query) -> list[SpringerArticle]:
 
 # print(len(articles))
 
+
+# how to use it
 if __name__ == "__main__":
-    for article in springer_search():
+    for article in search_in_springer():
         # i += 1
         print("##################################")
         print(article.title)
         print(article.pdf_page_url)
         print(article.download_url)
-        print(article.easy_download_url())
         article.as_html
         print("##################################")
