@@ -8,6 +8,14 @@ from bs4 import BeautifulSoup
 springer_api_key = "2498a3119bec21389fd480eb1610d3ae"
 
 
+
+
+
+
+
+
+
+
 class Springer_Article:
     def __init__(self, records: dict = {}):
         self.records: dict = records
