@@ -1,2 +1,2 @@
-# AI-marketer
+# G6 Extra
 .                              
